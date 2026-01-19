@@ -2,48 +2,208 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>LOTRO Raidplanung</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Throne of the Dread Terror – Raid Guide</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background-color: #111;
+            color: #eee;
+            margin: 20px;
+        }
+        h1, h2, h3, h4 {
+            color: #e6c87a;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        hr {
+            border: 1px solid #333;
+            margin: 30px 0;
+        }
+        .challenge {
+            color: #ff8c00;
+            font-weight: bold;
+        }
+        .loot {
+            color: #9acd32;
+        }
+    </style>
 </head>
 <body>
 
-<h1>LOTRO – Raid & Rollen Übersicht</h1>
+<h1>Throne of the Dread Terror – Raid Guide</h1>
 
-<div class="filters">
-    <select id="roleFilter">
-        <option value="">Alle Rollen</option>
-        <option value="Tank">Tank</option>
-        <option value="Heal">Heal</option>
-        <option value="DPS">DPS</option>
-        <option value="Support">Support</option>
-    </select>
+<h2>Karte</h2>
+<p>Throne-of-the-Dread-Terror</p>
 
-    <select id="classFilter">
-        <option value="">Alle Klassen</option>
-        <option value="Wächter">Wächter</option>
-        <option value="Hauptmann">Hauptmann</option>
-        <option value="Barde">Barde</option>
-        <option value="Runenbewahrer">Runenbewahrer</option>
-        <option value="Jäger">Jäger</option>
-        <option value="Kundiger">Kundiger</option>
-        <option value="Schurke">Schurke</option>
-        <option value="Hüter">Hüter</option>
-    </select>
-</div>
+<hr>
 
-<table>
-    <thead>
-        <tr>
-            <th>Spieler</th>
-            <th>Klasse</th>
-            <th>Rolle</th>
-            <th>Main/Twink</th>
-            <th>Anmerkung</th>
-        </tr>
-    </thead>
-    <tbody id="raidTable"></tbody>
-</table>
+<h2>Boss #1: Rakothas</h2>
 
-<script src="script.js"></script>
+<p class="challenge">T2 Herausforderung: Maximal 1 Powder Keg während des Kampfes verwenden.</p>
+
+<h3>Mechaniken</h3>
+
+<h4>Methode 1 (6 / 6) – Optimal für T1</h4>
+<ul>
+    <li>2 Gruppen mit je 6 Spielern stehen auf beiden Seiten des Bosses.</li>
+    <li><strong>Hemorrhage</strong> stapelt sich auf den Tanks – Aggro-Wechsel bei T3 oder sobald der Debuff abläuft.</li>
+    <li>5 Spieler stehen innerhalb von 5m beim jeweiligen Tank zur Schadensverteilung.</li>
+    <li>Adds spawnen bei 60%, 40% und 20% Boss-Moral.</li>
+    <li>Adds per AoE durch den Boss töten (Champions sehr gut).</li>
+</ul>
+
+<h4>Methode 2 (6/6 → 11/1) – T2C Taktik</h4>
+<ul>
+    <li>Boss von 100% bis 0% durchgehend DPSen, Adds ignorieren.</li>
+    <li>1 Powder Keg bei 40% Moral verwenden.</li>
+    <li>Bis 40% in 6/6 Gruppen bleiben.</li>
+    <li>Nach dem Kniegang wechseln 5 Spieler (kein Tank) die Seite.</li>
+    <li>Captain eignet sich hervorragend als Solo-Tank (Last Stand + DNF).</li>
+    <li>AoE und Stuns zur Add-Kontrolle nutzen.</li>
+</ul>
+
+<h3>Zusätzliche Infos</h3>
+<ul>
+    <li>Bei 25% erhält der Boss <strong>Enraged (+100% Schaden)</strong>.</li>
+    <li>Oathbreakers bereithalten für 25% → 0%.</li>
+    <li>In T2C nur ein Powder Keg erlaubt (optimal bei 40%).</li>
+    <li>Adds erhalten Enrage bei 40% HP.</li>
+    <li>Viele Cooldowns resetten beim Kampfbeginn.</li>
+</ul>
+
+<h3 class="loot">Loot</h3>
+<ul>
+    <li>Worn Helmet of the Pelennor Fields</li>
+    <li>Tarnished Ring of the Pelennor Fields</li>
+    <li>Housing Items</li>
+</ul>
+
+<p>
+    Video: <a href="https://www.youtube.com/watch?v=nDE9lE02mfU" target="_blank">YouTube Guide</a>
+</p>
+
+<hr>
+
+<h2>Boss #2: Mumaks (Set-Akaji / Arpong-Dokh / Ku-Nerpag)</h2>
+
+<p class="challenge">T2 Herausforderung: Kein Spieler darf durch Mumaks sterben.</p>
+
+<h3>Allgemeine Mechaniken</h3>
+<ul>
+    <li>DNF vor Kampfbeginn auf den Kite-Tank.</li>
+    <li>Adds spawnen bei 70%, 55%, 40% und 25% HP.</li>
+    <li>Kein AoE, wenn mehrere Mumaks in der DPS-Gruppe sind.</li>
+    <li>Stampeder sofort meiden – One-Hit.</li>
+    <li>Augen-Debuff: Ziel verlässt die Gruppe (5m Abstand).</li>
+    <li>Kreise verursachen 40% Moral-Schaden.</li>
+</ul>
+
+<h3>Methode 1 (T1 – High DPS)</h3>
+<ul>
+    <li>3 Mumaks aktiv.</li>
+    <li>Ranged verteilen sich 5m auseinander.</li>
+    <li>Kite-Tank zieht zwei Mumaks weg.</li>
+    <li>Arpong zuerst töten.</li>
+    <li>Adds priorisieren: Warmasters → Champions → Archers → Spearmen</li>
+</ul>
+
+<h3>Methode 2 (T1 – Moderate DPS)</h3>
+<ul>
+    <li>Gezieltes Phasen bei 70% / 55%.</li>
+    <li>Keine DoTs oder Bleeds beim Phasen.</li>
+    <li>Sauberes Add-Management erforderlich.</li>
+</ul>
+
+<h3>Methode 3 (T2C)</h3>
+<ul>
+    <li>Extrem hohe Koordination notwendig.</li>
+    <li>4 Tanks, 3 Heiler, dedizierte CC-Rollen.</li>
+    <li>Exakte Phasensteuerung zwingend.</li>
+</ul>
+
+<h3 class="loot">Loot</h3>
+<ul>
+    <li>Worn Shoulders of the Pelennor Fields</li>
+    <li>Tarnished Ring / Bracelet</li>
+    <li>Ancient Ithil-coins</li>
+</ul>
+
+<hr>
+
+<h2>Boss #3: Vadokhar</h2>
+
+<p class="challenge">T2 Herausforderung: Nur ein Element absorbieren (Feuer oder Gloom).</p>
+
+<ul>
+    <li>Boss und Adds zusammen tanken – AoE DPS.</li>
+    <li>Boss in Pfützen ziehen um Damage Immunity zu entfernen.</li>
+    <li>Inductions immer unterbrechen.</li>
+    <li>Vessel of Flame: Ziel geht 5m aus der Gruppe.</li>
+</ul>
+
+<h3 class="loot">Loot</h3>
+<ul>
+    <li>Gloves of the Pelennor Fields</li>
+    <li>Tarnished Ring / Bracelet</li>
+</ul>
+
+<hr>
+
+<h2>Boss #4: The Unbroken One</h2>
+
+<p class="challenge">T2 Herausforderung: 200 Korruptionen entfernen, bevor Mini-Bosse sterben.</p>
+
+<ul>
+    <li>Alle Klassen spammen Corruption Removal.</li>
+    <li>Vortex meiden – zieht Spieler an.</li>
+    <li>Oozing Darklings nicht im Nahkampf.</li>
+</ul>
+
+<h3 class="loot">Loot</h3>
+<ul>
+    <li>Worn Boots of the Pelennor Fields</li>
+    <li>Tome of the Loyal Swan Night (T2)</li>
+</ul>
+
+<hr>
+
+<h2>Boss #5: Woe of Khand & High Sorcerer of Harad</h2>
+
+<p class="challenge">T2 Herausforderung: Beide Bosse innerhalb von 10 Sekunden töten.</p>
+
+<ul>
+    <li>Bosse getrennt im Licht halten.</li>
+    <li>High Sorcerer: Kein Nahkampf.</li>
+    <li>Augen-Debuff: Abstand halten.</li>
+    <li>Spirits sofort töten.</li>
+</ul>
+
+<h3 class="loot">Loot</h3>
+<ul>
+    <li>Worn Legguards of the Pelennor Fields</li>
+    <li>Housing Items</li>
+</ul>
+
+<hr>
+
+<h2>Boss #6: Gothmog (Phase 1 & 2)</h2>
+
+<ul>
+    <li>Mehrere Phasen & Mini-Bosse.</li>
+    <li>Blaue Flammen meiden.</li>
+    <li>Risen Bones getrennt tanken.</li>
+    <li>Reflekt-Schaden beachten.</li>
+</ul>
+
+<h3 class="loot">Final Loot</h3>
+<ul>
+    <li>Chestplate</li>
+    <li>Pocket Item</li>
+    <li>Tarnished Necklace & Earring</li>
+    <li>Ancient Ithil-coins</li>
+</ul>
+
 </body>
 </html>
