@@ -25,7 +25,7 @@ function renderTable() {
             row.innerHTML = `
                 <td>${p.spieler}</td>
                 <td>${p.klasse}</td>
-                <td>${p.rolle}</td>
+                <td class="role-${p.rolle}">${p.rolle}</td>
                 <td>${p.typ}</td>
                 <td>${p.info}</td>
             `;
