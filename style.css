@@ -1,39 +1,80 @@
+/* === Grunddesign === */
 body {
-    font-family: Arial, sans-serif;
-    background: #121212;
-    color: #eee;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: radial-gradient(circle at top, #1c1c1c, #0e0e0e);
+    color: #f0e6d2;
     padding: 20px;
 }
 
+/* === Überschrift === */
 h1 {
     text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    color: #d4af37; /* Gold */
+    text-shadow: 0 0 8px rgba(212,175,55,0.4);
 }
 
+/* === Filterbereich === */
 .filters {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 20px;
+    gap: 15px;
+    margin: 20px 0;
 }
 
 select {
-    padding: 5px;
+    padding: 8px 12px;
+    background: #1f1f1f;
+    color: #f0e6d2;
+    border: 1px solid #555;
+    border-radius: 6px;
 }
 
+/* === Tabelle === */
 table {
     width: 100%;
     border-collapse: collapse;
+    background: rgba(20, 20, 20, 0.85);
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-th, td {
+th {
+    background: linear-gradient(to bottom, #2c2c2c, #1a1a1a);
+    color: #d4af37;
+    padding: 12px;
+    text-align: left;
+    font-size: 0.95em;
+}
+
+td {
     padding: 10px;
     border-bottom: 1px solid #333;
 }
 
-th {
-    background: #1f1f1f;
+/* Hover */
+tr:hover {
+    background: rgba(212, 175, 55, 0.08);
 }
 
-tr:hover {
-    background: #1a1a1a;
+/* === Rollen-Farben === */
+.role-Tank {
+    color: #5dade2;
+    font-weight: bold;
+}
+
+.role-Heal {
+    color: #58d68d;
+    font-weight: bold;
+}
+
+.role-DPS {
+    color: #ec7063;
+    font-weight: bold;
+}
+
+.role-Support {
+    color: #af7ac5;
+    font-weight: bold;
 }
